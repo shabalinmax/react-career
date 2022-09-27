@@ -1,0 +1,28 @@
+.developingWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #8d8b8b;
+  min-height: 100vh;
+}
+.developingWrapper .developing {
+  border-radius: 10px;
+  background-color: white;
+  padding: 20px;
+}
+.developingWrapper .developing h1 {
+  margin: 50px 0;
+}
+.developingWrapper .developing h2 {
+  margin-bottom: 50px;
+  color: black;
+}
+.developingWrapper .developing h3 {
+  cursor: pointer;
+}
+.developingWrapper .developing h3:hover {
+  color: #000;
+}
+
+/*# sourceMappingURL=Developing.css.map */

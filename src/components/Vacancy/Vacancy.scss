@@ -1,0 +1,59 @@
+.VacancyWrapper{
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  .vacancyDescription {
+    .dateOfPublication {
+      font-weight: 300;
+      color: #8d8b8b;
+      margin-bottom: 5px;
+    }
+    .companyName {
+
+      font-weight: 300;
+      font-size: 20px;
+      span.rating {
+        color: #1ace1a;
+      }
+    }
+    .jobName {
+      margin-bottom: 5px;
+
+      font-size: 30px;
+      font-weight: 500;
+    }
+    .skills {
+      font-size: 20px;
+      white-space:nowrap;
+      color: #8d8b8b;
+      font-weight: 300;
+
+      span:not(:first-child) {
+        margin-left: 5%;
+      }
+      @media screen and (max-width: 570px){
+        display: flex;
+        flex-direction: column;
+        span {
+          margin-left: 5%;
+        }
+      }
+    }
+  }
+  .logoAndFavorite {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    img.logo {
+      max-width: 50px;
+    }
+    .favorite {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+
+}

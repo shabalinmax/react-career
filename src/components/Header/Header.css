@@ -1,0 +1,26 @@
+header {
+  background-color: #596f84;
+  padding: 10px;
+}
+header .headerWrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1100px;
+}
+header .headerWrapper .headerLogo {
+  color: #fff;
+  font-size: 30px;
+}
+header .headerWrapper .headerLinkToTopic {
+  display: flex;
+  align-items: center;
+}
+header .headerWrapper .headerLinkToTopic a {
+  font-weight: 300;
+  font-size: 16px;
+  text-decoration: none;
+  color: #ffce57;
+}
+
+/*# sourceMappingURL=Header.css.map */

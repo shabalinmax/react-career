@@ -1,0 +1,57 @@
+.VacancyWrapper {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+.VacancyWrapper .vacancyDescription .dateOfPublication {
+  font-weight: 300;
+  color: #8d8b8b;
+  margin-bottom: 5px;
+}
+.VacancyWrapper .vacancyDescription .companyName {
+  font-weight: 300;
+  font-size: 20px;
+}
+.VacancyWrapper .vacancyDescription .companyName span.rating {
+  color: #1ace1a;
+}
+.VacancyWrapper .vacancyDescription .jobName {
+  margin-bottom: 5px;
+  font-size: 30px;
+  font-weight: 500;
+}
+.VacancyWrapper .vacancyDescription .skills {
+  font-size: 20px;
+  white-space: nowrap;
+  color: #8d8b8b;
+  font-weight: 300;
+}
+.VacancyWrapper .vacancyDescription .skills span:not(:first-child) {
+  margin-left: 5%;
+}
+@media screen and (max-width: 570px) {
+  .VacancyWrapper .vacancyDescription .skills {
+    display: flex;
+    flex-direction: column;
+  }
+  .VacancyWrapper .vacancyDescription .skills span {
+    margin-left: 5%;
+  }
+}
+.VacancyWrapper .logoAndFavorite {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.VacancyWrapper .logoAndFavorite img.logo {
+  max-width: 50px;
+}
+.VacancyWrapper .logoAndFavorite .favorite {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/*# sourceMappingURL=Vacancy.css.map */

@@ -1,0 +1,26 @@
+.FilterWrapper {
+  padding: 10px;
+  margin: 5px;
+  background-color: #fff;
+}
+.FilterWrapper .filterContent h2 {
+  font-weight: 500;
+}
+.FilterWrapper .filterContent .searchBlock input {
+  font-size: 14px;
+  color: #8d8b8b;
+  background-color: rgba(178, 178, 178, 0.13);
+  padding: 5px;
+  width: 99%;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+.FilterWrapper .filterContent .numberOfJob {
+  margin-top: 5px;
+  font-size: 12px;
+  font-style: italic;
+  color: #8d8b8b;
+}
+
+/*# sourceMappingURL=Filter.css.map */

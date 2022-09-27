@@ -1,0 +1,26 @@
+header {
+  //display: flex;
+  //justify-content: center;
+  background-color: #596f84;
+  padding: 10px;
+  .headerWrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 1100px;
+    .headerLogo {
+      color: #fff;
+      font-size: 30px;
+    }
+    .headerLinkToTopic {
+      display: flex;
+      align-items: center;
+      a {
+        font-weight: 300;
+        font-size: 16px;
+        text-decoration: none;
+        color: #ffce57;
+      }
+    }
+  }
+}
