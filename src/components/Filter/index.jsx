@@ -1,6 +1,6 @@
 import React from 'react';
 import './Filter.css'
-const Filter = ({setSearchValue}) => {
+const Filter = ({setSearchValue, countOfVacancy}) => {
     return (
         <div className={'FilterWrapper'}>
             <div className="filterContent">
@@ -8,8 +8,8 @@ const Filter = ({setSearchValue}) => {
                 <div className="searchBlock">
                     <input placeholder={'Поиск'} type="text" onChange={event => setSearchValue(event.target.value)} />
                 </div>
-                <div className="numberOfJob">
-                    Сейчас доступно 365 вакансий
+                <div className="countOfVacancy">
+                    Сейчас доступно {countOfVacancy} вакансий
                 </div>
             </div>
         </div>

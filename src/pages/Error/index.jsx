@@ -5,7 +5,7 @@ const Error = () => {
     return (
         <div className={'errorWrapper'}>
             <div className="error">
-                <div>                <h1>Данной путь не существует</h1>
+                <div>                <h1>Данный путь не существует</h1>
                 </div>
                 <div>                <Link to={'/'}>Вернуться на главную</Link>
                 </div>
