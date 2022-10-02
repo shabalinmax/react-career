@@ -4,7 +4,7 @@ const Footer = () => {
     return (
         <div className='footerWrapper' >
             <footer>
-                BOLD Career | Max Shabalin`s React project
+                BOLD Career | React project
                 2022
             </footer>
         </div>

@@ -8,7 +8,7 @@ const Favorite = ({vacancyList}) => {
     vacancyList = vacancyList.filter(el => el.isFavorite)
     React.useEffect(() => {
         setFavoriteListChanged(false)
-    }, [isFavoriteListChanged])
+    }, [vacancyList])
     return (
         <div className={'favoriteWrapper'}>
            <div className="favorite">
@@ -16,7 +16,7 @@ const Favorite = ({vacancyList}) => {
                {
                    vacancyList.length > 0 ?  vacancyList.map((el) =>
                        <Vacancy
-                           setFavoriteListChanged = {setFavoriteListChanged}
+                           setFavoriteListChanged={setFavoriteListChanged}
                            key = {el.id}
                            job = {el}
                        />
