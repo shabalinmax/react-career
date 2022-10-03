@@ -13,7 +13,7 @@ const SectionMenu = ({vacancyList}) => {
                     <Link to = '/developing'>
                         <span>Специалисты</span>
                     </Link>
-                    <Link to = '/developing'>
+                    <Link to = '/companies'>
                         <span>Компании</span>
                     </Link>
                     <Link to = '/developing'>

@@ -8,8 +8,9 @@ import Developing from "./pages/Developing";
 import Error from "./pages/Error";
 import React from "react";
 import Favorite from "./pages/Favorite";
-import AddVacancy from "./components/AddVacancy";
+import AddVacancy from "./pages/AddVacancy";
 import Vacancy from "./components/Vacancy";
+import Companies from "./pages/companies";
 
 function App() {
     const [vacancyList, setVacancyList] = React.useState([ {
@@ -49,22 +50,6 @@ function App() {
     const [isAllDataAdded, setIsAllDataAdded] = React.useState('none')
     const onClickAddVacancy = () => {
         if (nameOfVacancy.trim().length>0&&requirements.trim().length>0&&nameOfCompany.trim().length>0) {
-            // vacancyList.push(
-            //     {
-            //         id: vacancyList.length,
-            //         companyName: nameOfCompany,
-            //         jobName: nameOfVacancy,
-            //         skills: requirements,
-            //         isFavorite: false,
-            //         rating: '',
-            //         dateOfPublication: ((d,x,y)=>`${x(d.getDate())} ${y(d.getMonth())} ${d.getFullYear()}`)
-            //         (
-            //             new Date(),
-            //             (x)=>x.toString().padStart(2,"0"),
-            //             (m)=>"jan,feb,mar,apr,may,jun,jul,aug,sep,oct,nov,dec".split(',')[m]
-            //         ),
-            //     }
-            // )
             setVacancyList([...vacancyList,     {
                 id: vacancyList.length,
                 companyName: nameOfCompany,
@@ -93,7 +78,6 @@ function App() {
     },[nameOfVacancy,requirements,nameOfCompany])
     return (
     <div
-        // style={isAddVacancy ? {overflow: 'hidden'} : {}}
         className="App">
         <Header/>
         <SectionMenu
@@ -106,6 +90,11 @@ function App() {
 
             <Route path='/developing' element =
                 {<Developing/>}>
+            </Route>
+            <Route path='/companies' element =
+                {<Companies
+                    vacancyList = {vacancyList}
+                />}>
             </Route>
             <Route
                 path={'/favorite'}

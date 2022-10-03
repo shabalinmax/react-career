@@ -27,7 +27,7 @@ const Vacancy = ({job,setFavoriteListChanged}) => {
                             </svg> {job.rating}</span></div>
                 <div className='jobName'>{job.jobName}</div>
                 <div className="skills">
-                    <span>{job.skills}</span>
+                    <div style={{whiteSpace: 'normal'}}>{job.skills}</div>
                 </div>
             </div>
             <div className="logoAndFavorite">
