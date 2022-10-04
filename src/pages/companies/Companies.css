@@ -26,9 +26,14 @@
 .companiesWrapper .companies .companyWrapper .company {
   display: flex;
   justify-content: space-between;
-  padding: 30px;
-  font-weight: 600;
-  font-size: 30px;
+  align-items: center;
+  padding: 10px;
+  font-weight: 400;
+  font-size: 25px;
+}
+.companiesWrapper .companies .companyWrapper .company .companyRating {
+  font-size: 14px;
+  margin-left: 5px;
 }
 
 /*# sourceMappingURL=Companies.css.map */

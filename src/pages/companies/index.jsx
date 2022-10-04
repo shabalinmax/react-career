@@ -5,10 +5,7 @@ const Companies = ({vacancyList}) => {
         <div className={'companiesWrapper'}>
             <div className="companies">
                 <div className={'temporaryInfo'}>
-                    <p>В этом разделе вы можете ознакомиться с компаниями, которые разместили вакансии на нашем сайте</p>
-                    <p>ВАЖНО!</p>
-                    <p>если вы работали или работаете в одной из компаний, пожалуйста, оставьте свою оценку</p>
-                    <p>помогите соискателям с выбором </p>
+
                 </div>
                 {vacancyList.map(company =>
                 <div
@@ -19,7 +16,8 @@ const Companies = ({vacancyList}) => {
                             {company.companyName}
                         </div>
                         <div className="companyRating">
-                            {company.rating}
+                            {company.rating !== 0 ? <div> средняя оценка компании: {company.rating} </div> : <div>у этой компании еще не отзывов :(</div>  }
+
                         </div>
                     </div>
 

@@ -11,6 +11,10 @@
   background-color: #fff;
   padding: 2%;
   border-radius: 10px;
+  margin: 2%;
+}
+.favoriteWrapper .favorite .VacancyWrapper {
+  margin: 5px;
 }
 .favoriteWrapper .favorite h2 {
   cursor: pointer;

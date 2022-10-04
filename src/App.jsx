@@ -56,7 +56,7 @@ function App() {
                 jobName: nameOfVacancy,
                 skills: requirements,
                 isFavorite: false,
-                rating: '',
+                rating: 5,
                 dateOfPublication: ((d,x,y)=>`${x(d.getDate())} ${y(d.getMonth())} ${d.getFullYear()}`)
                 (
                     new Date(),
