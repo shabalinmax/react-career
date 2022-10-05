@@ -13,12 +13,13 @@ import Vacancy from "./components/Vacancy";
 import Companies from "./pages/companies";
 
 function App() {
-    const [vacancyList, setVacancyList] = React.useState([ {
+    const [vacancyList, setVacancyList] = React.useState([
+        {
         id: 0,
         companyName: 'ГК "АСТРА"',
         jobName: 'Ведущий разработчик (Front-end)',
         logoUrl: 'https://hsto.org/getpro/moikrug/uploads/company/100/007/221/6/logo/medium_9b118dcbc49820342b0f7e2b4a87f904.png',
-        rating: [1,2,5,3,4,3,4,4],
+        rating:  [],
         skills: 'HTML, JavaScript, React',
         isFavorite: false,
         dateOfPublication: '02 oct 2022',
@@ -28,7 +29,7 @@ function App() {
             companyName: 'IRLIX',
             jobName: 'Middle/ Middle+ Frontend developer (react)',
             logoUrl: 'https://hsto.org/getpro/moikrug/uploads/company/100/007/018/3/logo/medium_ca7bfaa26d0e35a743ed5b8a9d0c8a12.png',
-            rating: [1,2,5,5,5,5],
+            rating: [],
             skills: 'Фронтенд разработчик, HTML, JavaScript, React, Webpack, TypeScript',
             isFavorite: false,
             dateOfPublication: '02 oct 2022',
@@ -38,7 +39,7 @@ function App() {
             companyName: 'Prodamus',
             jobName: 'Senior Frontеnd developer (React)',
             logoUrl: 'https://hsto.org/getpro/moikrug/uploads/company/100/007/177/1/logo/medium_5089eaf196d97e8b1d71da30724edb96.png',
-            rating: [1,2,5,4,4],
+            rating: [],
             skills: 'HTML, Redux, JavaScript, React, Webpack',
             isFavorite: false,
             dateOfPublication: '02 oct 2022',

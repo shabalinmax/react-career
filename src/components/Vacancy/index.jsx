@@ -1,5 +1,6 @@
 import React from 'react';
 import './Vacancy.css'
+import {logDOM} from "@testing-library/react";
 
 const Vacancy = ({job,setFavoriteListChanged}) => {
     const [isClickFavorite, setClickIsFavorite] = React.useState(false)
@@ -23,7 +24,7 @@ const Vacancy = ({job,setFavoriteListChanged}) => {
                             <path d="M9 11H4C3.44772 11 3 11.4477 3 12V20H9V11Z" stroke="#1ACE1A" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                             <path d="M20 8H15V20H21V9C21 8.44772 20.5523 8 20 8Z" stroke="#1ACE1A" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                             <path d="M14 4H10C9.44772 4 9 4.44772 9 5V20H15V5C15 4.44772 14.5523 4 14 4Z" stroke="#1ACE1A" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                            </svg> {(job.rating.reduce((partialSum, a) => partialSum + a, 0)/job.rating.length).toFixed(2)}</span></div>
+                            </svg> {job.rating.length === 0 ? <span>нет оценки :(</span> : (job.rating.reduce((partialSum, a) => partialSum + a, 0)/job.rating.length).toFixed(2)}</span></div>
                 <div className='jobName'>{job.jobName}</div>
                 <div className="skills">
                     <div style={{whiteSpace: 'normal'}}>{job.skills}</div>

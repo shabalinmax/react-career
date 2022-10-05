@@ -1,6 +1,16 @@
 import React from 'react';
 import './Companies.css'
 const Companies = ({vacancyList}) => {
+    const [changeRatingNameCompany, setChangeRatingNameCompany] = React.useState(vacancyList[0].companyName)
+    const [changeRatingValue, setChangeRatingValue] = React.useState(5)
+    const [changeRating, setChangeRating] = React.useState(false)
+    React.useEffect(() => {
+        setChangeRating(false)
+    }, [changeRating])
+    const onClick = () => {
+        vacancyList.filter(el => el.companyName === changeRatingNameCompany)[0].rating.push(changeRatingValue)
+        setChangeRating(true)
+    }
     return (
         <div className={'companiesWrapper'}>
             <div className="companies">
@@ -31,10 +41,10 @@ const Companies = ({vacancyList}) => {
                     Если вы сталкивались с работой в одной из следующих фирм, можете оставить свой балл
                 </h1>
                 <div className="rateSection">
-                    <select onChange={event => console.log(event.target.value)} className={'companySelect'}>
+                    <select onChange={event => setChangeRatingNameCompany(event.target.value)} className={'companySelect'}>
                         {vacancyList.map(el => <option key={el.id} value={el.companyName}>{el.companyName}</option>)}
                     </select>
-                    <select onChange={event => console.log(event.target.value)} className={'ratingSelect'}>
+                    <select onChange={event => setChangeRatingValue(+event.target.value)} className={'ratingSelect'}>
                         <option value={5}>
                             5
                         </option>
@@ -51,7 +61,7 @@ const Companies = ({vacancyList}) => {
                             1
                         </option>
                     </select>
-                    <button>Отправить</button>
+                    <button onClick={() => onClick()}>Отправить</button>
                 </div>
             </div>
 

@@ -2,6 +2,7 @@ import React from 'react';
 import './AddVacancy.css'
 
 const AddVacancy = ({setNameOfVacancy, setRequirements, setNameOfCompany,onClickAddVacancy,isAllDataAdded}) => {
+
     return (
         <div className={'addVacancyWrapper'}>
             <div className="addVacancy">
