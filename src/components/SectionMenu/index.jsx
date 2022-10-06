@@ -13,15 +13,11 @@ const SectionMenu = ({vacancyList}) => {
                     <Link to = '/companies'>
                         <span>Компании</span>
                     </Link>
-                    <Link to = '/developing'>
-                        <span>Рейтинг</span>
-                    </Link>
+
                     <Link to = '/developing'>
                         <span>Образование</span>
                     </Link>
-                    <Link to = '/developing'>
-                        <span>Журнал</span>
-                    </Link>
+
                 </div>
                 <div className="sectionMenuAccount">
 
